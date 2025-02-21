@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/assets/images/sennera-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Sennera</title>
+  </head>
+  <body>
+    <header>
+      <div class="box-logo">
+        <img
+          src="./src/assets/images/logo.png"
+          alt="logo sennera"
+          class="img-logo"
+        />
+        <h1 class="title-logo">Sennera</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+            <li class="btn-exit"><img src="./src/assets/images/exit.svg" alt="" class="img-exit" onclick="toggleMenu()"></li>
+          <li><a id="scrollSobre" onclick="scrollToSection(2)">Sobre</a></li>
+          <li>
+            <a id="scrollProduct" onclick="scrollToSection(3)">Produto</a>
+          </li>
+          <li><a href="mailto:suportesennera@gmail.com">Contato</a></li>
+          <li class="download-menu"><a href="https://drive.google.com/file/d/1MDi1j_PjkPlIbnfa26VeOozT4hqqVjte/view"
+            target="_blank" >Download</a></li>
+        </ul>
+      </nav>
+      <a
+        href="https://drive.google.com/file/d/1MDi1j_PjkPlIbnfa26VeOozT4hqqVjte/view"
+        target="_blank"
+        class="button-header"
+        >Download</a
+      >
+
+      <div class="menu" onclick="toggleMenu()">
+        <img src="./src/assets/images/menu.svg" alt="icon menu" class="icon-menu"/>
+      </div>
+    </header>
+
+    <div class="custom_scrollbar">
+      <div class="custom_thumb"></div>
+    </div>
+
+    <main>
+      <section class="container-banner">
+        <div class="box-text-banner">
+          <h1 class="title-banner">
+            Seja bem vindo ao
+            <br />
+            <strong class="color-text-banner">Sennera</strong>
+          </h1>
+          <h4 class="subtitle-banner">
+            Uma ferramenta poderosa dedicada a combater a violência, o abuso e a
+            discriminação contra mulheres, crianças e pessoas LGBTQIA+.
+          </h4>
+          <a
+            href="https://drive.google.com/file/d/1MDi1j_PjkPlIbnfa26VeOozT4hqqVjte/view"
+            target="_blank"
+            class="button-banner"
+            >Download</a
+          >
+        </div>
+
+        <div class="box-image-banner">
+          <img
+            src="./src/assets/images/phoneGroupStart.png"
+            alt="image smartphone app sennera"
+            class="img-banner"
+          />
+        </div>
+      </section>
+
+      <section class="container-dev-team" id="sobre">
+        <div class="background-dev-team">
+          <div class="text-left">
+            <h1 class="title-dev-team">Sobre Nós</h1>
+            <h4 class="subtitle-dev-team">
+              Somos um grupo de estudantes de Ciência da Computação, unidos por
+              um objetivo comum: usar a tecnologia para impactar positivamente a
+              sociedade. Este aplicativo nasceu como um projeto acadêmico, mas
+              rapidamente se tornou uma missão que vai além das salas de aula.
+            </h4>
+          </div>
+
+          <div class="text-right">
+            <h1 class="title-dev-team">Nosso Propósito</h1>
+            <h4 class="subtitle-dev-team">
+              O que começou como um trabalho de faculdade evoluiu para uma
+              plataforma real, com o potencial de transformar vidas. Estamos
+              determinados a continuar aperfeiçoando o aplicativo, aprendendo
+              com os desafios e ouvindo a comunidade.
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-info">
+        <div class="info-text">
+          <h1 class="title-info">Significado por Trás do Nome</h1>
+          <h4 class="subtitle-info">
+            O nome do aplicativo foi escolhido com cuidado para refletir nossa
+            missão e valores. Significando "inocência" em esperanto, ele
+            simboliza a pureza e a esperança de um futuro melhor. Mesmo nas
+            situações mais difíceis, o nome carrega a mensagem de que apoio e
+            proteção são possíveis. Cada detalhe foi pensado para inspirar
+            confiança e acolhimento a quem mais precisa.
+          </h4>
+        </div>
+
+        <div class="info-img">
+          <img
+            src="./src/assets/images/phoneVertical.png"
+            alt="image app sennera"
+            class="img-info"
+          />
+        </div>
+      </section>
+
+      <section class="container-product">
+        <h1 class="title-conteiner-product">O Que o Aplicativo Oferece</h1>
+
+        <div class="box-product">
+          <div class="box-product-item">
+            <h2 class="title-product">Fórum de Conscientização e Apoio</h2>
+            <h4 class="subtitle-product">
+              Um espaço seguro para que os usuários compartilhem suas histórias
+              e experiências.
+            </h4>
+            <h4 class="subtitle-product">
+              Funcionalidades para publicar textos, comentar, curtir e salvar
+              postagens relevantes.
+            </h4>
+            <h4 class="subtitle-product">
+              Uma rede de apoio comunitária para fortalecer quem enfrenta
+              desafios.
+            </h4>
+          </div>
+
+          <div class="box-product-item">
+            <h2 class="title-product">Notícias e Educação</h2>
+            <h4 class="subtitle-product">
+              Atualizações constantes sobre leis, campanhas e iniciativas
+              relacionadas ao combate à violência.
+            </h4>
+            <h4 class="subtitle-product">
+              Recursos educativos para identificar sinais de abuso e saber como
+              agir.
+            </h4>
+            <h4 class="subtitle-product">
+              Artigos que destacam histórias inspiradoras e conquistas sociais.
+            </h4>
+          </div>
+
+          <div class="box-product-item">
+            <h2 class="title-product">SOS e Localização de Ajuda</h2>
+            <h4 class="subtitle-product">
+              Um botão de ligação de emergência que pode ser acionado em
+              situações de perigo.
+            </h4>
+            <h4 class="subtitle-product">
+              Localização instantânea das bases da Polícia Militar e delegacias
+              especializadas para mulheres, crianças e LGBTQIA+.
+            </h4>
+            <h4 class="subtitle-product">Serviços de apoio.</h4>
+          </div>
+
+          <div class="box-product-item">
+            <h2 class="title-product">Diário Virtual</h2>
+            <h4 class="subtitle-product">
+              Um espaço protegido para registrar acontecimentos importantes de
+              forma privada e segura.
+            </h4>
+            <h4 class="subtitle-product">
+              Desenvolvido para ajudar crianças, mulheres e LGBTQIA+ a
+              organizarem seus pensamentos e experiências.
+            </h4>
+            <h4 class="subtitle-product">
+              Oferece confidencialidade total, criando um diário pessoal para
+              lidar com desafios de maneira segura.
+            </h4>
+          </div>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1MDi1j_PjkPlIbnfa26VeOozT4hqqVjte/view"
+          target="_blank"
+          class="button-banner"
+          >Download</a
+        >
+      </section>
+
+      <div onclick="scrollToTop()" id="scrollToTopBtn">
+        <img src="./src/assets/images/seta.svg" alt="return" class="img-return" />
+      </div>
+    </main>
+    <footer>
+      <h4 class="text-footer">
+        Aplicativo desenvolvido por estudantes de
+        <br />
+        Ciência da Computação
+        <br />
+        Uninassau, Campus Aracaju-SE.
+      </h4>
+
+      <div class="box-img-footer">
+        <img
+          src="./src/assets/images/ccIcon.svg"
+          alt="icon ciencia da computacao"
+          class="img-footer"
+        />
+        <img
+          src="./src/assets/images/uninassau.svg"
+          alt="icon uninassau"
+          class="img-footer"
+        />
+        <img
+          src="./src/assets/images/senneraLogoName.svg"
+          alt="icon sennera"
+          class="img-footer"
+        />
+      </div>
+    </footer>
+    <script src="./src/js/ambiente.js"></script>
+  </body>
+</html>

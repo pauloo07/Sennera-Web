@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
+}
+
+/* Garantindo estilos neutros para o corpo */
+body {
+  line-height: 1.5;
+  font-family: var(--font-dm-sans, sans-serif);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HTML5 display-role reset para navegadores antigos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Listas sem estilos padrão */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Garantindo que botões, inputs e selects tenham fontes consistentes */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  appearance: none; /* Remove estilos nativos */
+}
+
+/* Melhorando botões */
+button {
+  cursor: pointer;
+  background: none;
+}
+
+/* Garantindo que imagens não quebrem layouts */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tabelas consistentes */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove estilos padrões de fieldsets e legends */
+fieldset {
+  border: none;
+}
+
+/* Remove setas de input type number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+/* Remove estilos padrão de selects */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Remove a decoração padrão do input de pesquisa no Safari */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Ocultando elementos com hidden */
+[hidden] {
+  display: none !important;
+}

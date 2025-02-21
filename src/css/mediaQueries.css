@@ -1,0 +1,352 @@
+/* Mobile-first padrão */
+@media screen and (max-width: 768px){
+
+    body {
+    background: linear-gradient(
+      85deg,
+      rgba(47, 27, 82, 1) 15%,
+      rgba(212, 156, 255, 1) 100%
+    );
+    }
+  
+    /* ------------------HEADER------------------------ */
+    header {
+      padding: 1rem;
+    }
+    
+    .box-logo {
+      gap: 0.5rem;
+    }
+    
+    .img-logo {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .title-logo {
+      font-size: 1.5rem;
+    }
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: 0%;
+      transform: translateX(100%);
+      width: 60%;
+      height: 100%;
+      background-color: rgb(47, 27, 82);
+      flex-direction: column;
+      align-items: start;
+      padding: 20px;
+      transition: all 0.4s ease-in-out;
+      z-index: 1000;
+      border-radius: 30px 0px 0px 30px ;
+    }
+  
+    .navbar.menu-open {
+      transform: translateX(-10%);
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: start;
+      padding: 25px;
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .btn-exit, .menu, .download-menu {
+      display: flex;
+    }
+  
+    .icon-menu {
+      width: 30px;
+      height: auto;
+    }
+  
+    .button-header {
+      display: none;
+    }
+  
+    .menu {
+      display: block;
+    }
+  
+    /* ------------------BANNER------------------------ */
+    
+    .container-banner {
+      padding: 3rem 1rem 0 1rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .box-text-banner {
+      width: 100%;
+      gap: 1rem;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .title-banner {
+      font-size: 2rem;
+      width: 100%;
+    }
+  
+    .color-text-banner {
+      color: #2f1b52a5;
+    }
+  
+    .subtitle-banner {
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    .box-image-banner {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .img-banner {
+      margin-top: 1rem;
+      width: 80%;
+    }
+  
+    /* --------------------------------DEV TEAM--------------------------------- */
+  
+    .container-dev-team {
+      padding: 3rem 1rem 0 1rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .background-dev-team {
+      width: 100%;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 200px;
+    }
+  
+    .text-left, .text-right {
+      width: 100%;
+    }
+  
+    .title-dev-team {
+      font-size: 1.5rem;
+    }
+    
+    .subtitle-dev-team {
+      font-size: 0.8rem;
+      width: 100%;
+    }
+  
+    /* --------------------------------INFO------------------------------ */
+  
+    .container-info {
+      padding: 3rem 1rem 0 1rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .info-text {
+      width: 100%;
+      gap: 1rem;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .title-info {
+      font-size: 1.5rem;
+    }
+  
+    .subtitle-info {
+      font-size: 0.8rem;
+      width: 100%;
+    }
+  
+    .info-img {
+      width: 100%;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  
+    .img-info {
+      width: 50%;
+    }
+  
+    /* ----------------------------PRODUCT----------------------------------- */
+  
+    .container-product {
+      padding: 3rem 1rem 0 1rem;
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -100px;
+    }
+  
+    .title-conteiner-product {
+      font-size: 1.5rem;
+    }
+  
+    .box-product {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  
+    .box-product-item {
+      width: 100%;
+      height: 260px;
+    }
+  
+    .title-product {
+      font-size: 1.2rem;
+    }
+  
+    .subtitle-product {
+      font-size: 0.8rem;
+    }
+  
+    /* -------------------------------------RETURN-------------------------------------- */
+  
+    #scrollToTopBtn {
+      width: 50px;
+      height: 50px;
+      bottom: 2rem;
+      right: 1rem;
+    }
+  
+    .img-return {
+      width: 20px;
+    }
+  
+    /* ---------------------------------FOOTER--------------------------------------- */
+  
+    footer {
+      height: auto;
+      padding: 1rem ;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .text-footer {
+      font-size: 0.8rem;
+    }
+  
+    .box-img-footer {
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .img-footer {
+      width: 50px;
+    }
+  }
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+
+    /* --------------------------------HEADER--------------------------------- */
+    .title-logo {
+      font-size: 1.5rem;
+    }
+  
+    .img-logo {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .navbar {
+      width: 350px;
+    }
+  
+    /* ----------------------------------BANNER------------------------------------- */
+  
+    .title-banner {
+      font-size: 2.5rem;
+    }
+  
+    .subtitle-banner {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+  
+    .img-banner {
+      width: 400px;
+    }
+  
+    /* --------------------------------DEV TEAM--------------------------------- */
+  
+    .title-dev-team {
+      font-size: 2rem;
+    }
+  
+    .subtitle-dev-team {
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    .background-dev-team {
+      width: 100%;
+      border-radius: 250px;
+    }
+  
+    /* -----------------------------INFO---------------------------- */
+  
+    .title-info {
+      font-size: 2rem;
+    }
+  
+    .subtitle-info {
+      font-size: 1rem;
+      width: 100%;
+    }
+  
+    .img-info {
+      width: 250px;
+    }
+  
+    /* ----------------------------PRODUCT----------------------------------- */
+  
+    .container-product {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -100px;
+    }
+  
+    .title-conteiner-product {
+      font-size: 2rem;
+    }
+  
+    .box-product-item {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .title-product {
+      font-size: 1.5rem;
+    }
+  
+    .subtitle-product {
+      font-size: 1rem;
+    }
+  
+    /* -------------------------------------RETURN-------------------------------------- */
+  
+    #scrollToTopBtn {
+      width: 60px;
+      height: 60px;
+      bottom: 2rem;
+      right: 1rem;
+    }
+  
+    .img-return {
+      width: 25px;
+    }
+  }
